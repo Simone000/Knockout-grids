@@ -49,14 +49,12 @@ function pageModel(params) {
     };
     self.loadDipendenti();
 
-    self.dipendentiPaged = ko.computed(function () {
-        return new knockoutgrids.ServerGrid(self.dipendenti(), 5, 'reparto.azienda.nome',
-
+    self.dipendentiPaged = ko.observable(new knockoutgrids.ServerGrid(self.dipendenti(), 5, 'reparto.azienda.nome',
             function (PageSize, CurrPage, SortBy, IsDesc, SearchBy, Search) { //OnChange
-                console.log("OnChange");
-        });
-    }, self);
-
+                console.log("OnChange" + " PageSize:" + PageSize + " CurrPage:" + CurrPage + " SortBy:" + SortBy + " IsDesc:" + IsDesc + " SearchBy:" + SearchBy + " Search:" + Search);
+                self.loadDipendenti();
+            })
+    );
 
     return self;
 };
