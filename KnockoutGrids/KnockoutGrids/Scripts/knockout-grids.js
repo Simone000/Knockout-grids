@@ -216,8 +216,7 @@
                 }
 
                 return;
-            } //Fine ClientGrid
-            
+            }
 
             //Mostra sempre tutti gli elementi ma non fa alcuna operazione, su cambio => chiamo OnChange
             function ServerGrid(Items, PageSize, SearchBy, OnChange) {
@@ -228,7 +227,7 @@
                 self.pageSize = ko.observable(PageSize ? PageSize : 10); //numero di elementi per pagina
                 self.paginaAttuale = ko.observable(0); //la pagina a cui mi trovo
 
-                
+
                 self.isEditingPageIndex = ko.observable(false);
                 self.isEditingPageSize = ko.observable(false);
                 self.goToEditPageIndex = function () {
@@ -298,7 +297,7 @@
                     }
                     self.sortby(sort);
 
-                    OnChange(self.pageSize(), self.paginaAttuale(), self.sortby(), self.directionDesc(), self.searchBy(), self.search());
+                    self.refresh();
                 };
                 self.itemsInPageSorted = ko.computed(function () {
                     return self.items();
@@ -324,18 +323,21 @@
 
                 //altri trigger per OnChange (oltre a changeSort)
                 self.paginaAttuale.subscribe(function () {
-                    OnChange(self.pageSize(), self.paginaAttuale(), self.sortby(), self.directionDesc(), self.searchBy(), self.search());
+                    self.refresh();
                 });
                 self.pageSize.subscribe(function () {
-                    OnChange(self.pageSize(), self.paginaAttuale(), self.sortby(), self.directionDesc(), self.searchBy(), self.search());
+                    self.refresh();
                 });
                 self.search.subscribe(function () {
-                    OnChange(self.pageSize(), self.paginaAttuale(), self.sortby(), self.directionDesc(), self.searchBy(), self.search());
+                    self.refresh();
                 });
+
+                self.refresh = function () {
+                    OnChange(self.pageSize(), self.paginaAttuale(), self.sortby(), self.directionDesc(), self.searchBy(), self.search());
+                };
 
                 return;
             }  //Fine ServerGrid
-
         })();
     });
 }(typeof define === 'function' && define.amd ? define : function (deps, factory) {

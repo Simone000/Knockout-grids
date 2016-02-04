@@ -72,28 +72,36 @@ function pageModel(params) {
 
     /*
     self.loadAziende = function (PageSize, CurrPage, SortBy, IsDesc, SearchBy, Search) {
-            function success(data) {
-                self.aziende(ko.utils.arrayMap(data, function (item) {
-                    return new common.AziendaServizi(item);
-                }));
-            };
-            function error(jqXHR, desc) {
-                toastr["error"](desc, "Errore!");
-            };
-            api.GetAziendeServiziPaged($('#div_aziendeServiziBlock'), success, error, PageSize, CurrPage, SortBy, IsDesc, SearchBy, Search);
+        function success(data) {
+            self.aziende(ko.utils.arrayMap(data, function (item) {
+                return new common.AziendaServizi(item);
+            }));
         };
+        function error(jqXHR, desc) {
+            toastr["error"](desc, "Errore!");
+        };
+        api.GetAziendeServiziPaged($('#div_aziendeServiziBlock'), success, error, PageSize, CurrPage, SortBy, IsDesc, SearchBy, Search);
+    };
 
-        self.aziendePaged = ko.observable(
-            new knockoutgrids.ServerGrid(self.aziende, 10, 'nome',
-                function (PageSize, CurrPage, SortBy, IsDesc, SearchBy, Search) { //OnChange
-                    console.log("OnChange" + " PageSize:" + PageSize + " CurrPage:" + CurrPage + " SortBy:" + SortBy + " IsDesc:" + IsDesc + " SearchBy:" + SearchBy + " Search:" + Search);
-                    if (!Search)
-                        Search = '';
-                    self.loadAziende(PageSize, CurrPage, SortBy, IsDesc, SearchBy, Search);
-                })
-        );
+    self.aziendePaged = ko.observable(
+        new knockoutgrids.ServerGrid(self.aziende, 10, 'nome',
+            function (PageSize, CurrPage, SortBy, IsDesc, SearchBy, Search) { //OnChange
+                console.log("OnChange" + " PageSize:" + PageSize + " CurrPage:" + CurrPage + " SortBy:" + SortBy + " IsDesc:" + IsDesc + " SearchBy:" + SearchBy + " Search:" + Search);
+                if (!Search)
+                    Search = '';
+                self.loadAziende(PageSize, CurrPage, SortBy, IsDesc, SearchBy, Search);
+            })
+    );
 
-        self.loadAziende(10, 1, 'Nome', true, 'reparto.azienda.nome', '');
+    self.loadAziende(10, 1, 'Nome', true, 'reparto.azienda.nome', '');
+
+    //subscribe
+    self.statoAziendaSelezionato.subscribe(function () {
+        self.aziendePaged().refresh();
+    });
+    self.servizioSelezionato.subscribe(function () {
+        self.aziendePaged().refresh();
+    });
     */
 
     return self;
