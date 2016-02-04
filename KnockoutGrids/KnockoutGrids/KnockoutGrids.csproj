@@ -123,6 +123,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="NugetOutput\content\App\kogrids-clientsample1\" />
+    <Folder Include="NugetOutput\content\App\kogrids-serversample1\" />
     <Folder Include="NugetOutput\lib\" />
     <Folder Include="NugetOutput\src\" />
   </ItemGroup>
@@ -206,8 +208,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="NugetOutput\content\App\ko-grids-sample1.html" />
-    <Content Include="NugetOutput\content\App\ko-grids-sample1.js" />
     <Content Include="NugetOutput\content\Content\knockout-grids.css" />
     <Content Include="NugetOutput\content\Scripts\knockout-grids.js" />
     <Content Include="Scripts\bootstrap.js" />
