@@ -166,8 +166,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\ko-grids-sample1\ko-grids-sample1.html" />
-    <Content Include="App\ko-grids-sample1\ko-grids-sample1.js" />
+    <Content Include="App\kogrids-clientsample1\kogrids-clientsample1.html" />
+    <Content Include="App\kogrids-clientsample1\kogrids-clientsample1.js" />
     <Content Include="App\kogrids-serversample1\kogrids-serversample1.html" />
     <Content Include="App\kogrids-serversample1\kogrids-serversample1.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />

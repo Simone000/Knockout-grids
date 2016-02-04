@@ -83,7 +83,6 @@
                     else {
                         return ko.utils.arrayFilter(self.items(), function (item) {
 
-                            //Modifiche da portare su EasyMed
                             var searchName = self.searchBy();
                             var searchValue = null;
                             var testSplitted = searchName.split("."); //Appointments.name or appointments().name or appointments.name(), ...
@@ -224,7 +223,7 @@
             function ServerGrid(Items, PageSize, SearchBy, OnChange) {
                 var self = this;
 
-                self.items = ko.observableArray(Items); //array di oggetti da paginare
+                self.items = Items; //array di oggetti da paginare
 
                 self.pageSize = ko.observable(PageSize ? PageSize : 10); //numero di elementi per pagina
                 self.paginaAttuale = ko.observable(0); //la pagina a cui mi trovo
