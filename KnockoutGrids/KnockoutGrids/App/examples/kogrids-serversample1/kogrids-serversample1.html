@@ -4,10 +4,10 @@
     <title>Knockout Grids</title>
     <meta charset="utf-8" />
 
-    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="../../Content/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="../../Content/knockout-grids.css" rel="stylesheet" />
-    <link href="../../Content/Site.css" rel="stylesheet" />
+    <link href="../../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../../../Content/knockout-grids.css" rel="stylesheet" />
+    <link href="../../../Content/Site.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -33,7 +33,7 @@
                     <span data-bind="visible: $data.length == 0"><b>Nessuna Dipendente presente</b></span>     <!--todo: change text-->
 
                     <div class="table-responsive" data-bind="visible: items().length > 0">
-                        <table class="table table-striped">
+                        <table class="table table-striped table-hover">
                             <thead>
                                 <tr>
                                     <th><a href="#" data-bind="click: function(){ changeSort('nome') }">Nome</a></th>
@@ -77,11 +77,10 @@
 
 
 
-    <script src="../../Scripts/jquery-2.2.1.min.js"></script>
-    <script src="../../Scripts/bootstrap.min.js"></script>
-    <script src="../../Scripts/knockout-3.4.0.js"></script>
-
-    <script src="../../Scripts/knockout-grids.js"></script>
+    <script src="../../../Scripts/jquery-2.2.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap.min.js"></script>
+    <script src="../../../Scripts/knockout-3.4.0.js"></script>
+    <script src="../../../Scripts/knockout-grids.js"></script>
     <script src="kogrids-serversample1.js"></script>
 </body>
 </html>
