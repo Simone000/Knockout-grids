@@ -123,8 +123,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="NugetOutput\content\App\kogrids-clientsample1\" />
-    <Folder Include="NugetOutput\content\App\kogrids-serversample1\" />
+    <Folder Include="NugetOutput\content\App\examples\kogrids-clientsample1\" />
+    <Folder Include="NugetOutput\content\App\examples\kogrids-serversample1\" />
     <Folder Include="NugetOutput\lib\" />
     <Folder Include="NugetOutput\src\" />
   </ItemGroup>
@@ -168,10 +168,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\kogrids-clientsample1\kogrids-clientsample1.html" />
-    <Content Include="App\kogrids-clientsample1\kogrids-clientsample1.js" />
-    <Content Include="App\kogrids-serversample1\kogrids-serversample1.html" />
-    <Content Include="App\kogrids-serversample1\kogrids-serversample1.js" />
+    <Content Include="App\examples\kogrids-clientsample1\kogrids-clientsample1.html" />
+    <Content Include="App\examples\kogrids-clientsample1\kogrids-clientsample1.js" />
+    <Content Include="App\examples\kogrids-serversample1\kogrids-serversample1.html" />
+    <Content Include="App\examples\kogrids-serversample1\kogrids-serversample1.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
