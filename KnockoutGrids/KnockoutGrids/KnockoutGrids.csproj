@@ -122,9 +122,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\" />
     <Folder Include="App_Data\" />
-    <Folder Include="NugetOutput\content\App\examples\kogrids-clientsample1\" />
-    <Folder Include="NugetOutput\content\App\examples\kogrids-serversample1\" />
     <Folder Include="NugetOutput\lib\" />
     <Folder Include="NugetOutput\src\" />
   </ItemGroup>
@@ -168,10 +167,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\ko-grids\kogrids-clientsample1\kogrids-clientsample1.html" />
-    <Content Include="App\ko-grids\kogrids-clientsample1\kogrids-clientsample1.js" />
-    <Content Include="App\ko-grids\kogrids-serversample1\kogrids-serversample1.html" />
-    <Content Include="App\ko-grids\kogrids-serversample1\kogrids-serversample1.js" />
+    <Content Include="App-samples\kogrids-clientsample1\kogrids-clientsample1.html" />
+    <Content Include="App-samples\kogrids-clientsample1\kogrids-clientsample1.js" />
+    <Content Include="App-samples\kogrids-serversample1\kogrids-serversample1.html" />
+    <Content Include="App-samples\kogrids-serversample1\kogrids-serversample1.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -208,6 +207,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="NugetOutput\content\App-samples\kogrids-clientsample1\kogrids-clientsample1.html" />
+    <Content Include="NugetOutput\content\App-samples\kogrids-clientsample1\kogrids-clientsample1.js" />
+    <Content Include="NugetOutput\content\App-samples\kogrids-serversample1\kogrids-serversample1.html" />
+    <Content Include="NugetOutput\content\App-samples\kogrids-serversample1\kogrids-serversample1.js" />
     <Content Include="NugetOutput\content\Content\knockout-grids.css" />
     <Content Include="NugetOutput\content\Scripts\knockout-grids.js" />
     <Content Include="Scripts\bootstrap.js" />
