@@ -6,8 +6,12 @@
     border: solid black 1px;
     padding: 20px;
 }
-    .knockout-grids_t1 .panel-heading .panel-title a{
+    .knockout-grids_t1 .panel-heading .panel-title a {
         font-weight:bold;
+    }
+    .knockout-grids_t1 .panel-heading input{
+        border-radius: 8px;
+        padding-left: 4px;
     }
 
 
@@ -15,13 +19,13 @@
     border: solid;
     border-top-style: none;
 }
-    .knockout-grids_t1 .panel-body .pagination-menu{
+    .knockout-grids_t1 .panel-body .pagination-menu {
         text-align:center;
         background-color: #BEBEBE;
         padding: 4px;
         border-radius: 8px;
     }
 
-        .knockout-grids_t1 .panel-body .pagination-menu label{
+        .knockout-grids_t1 .panel-body .pagination-menu label {
             text-decoration: underline;
         }
