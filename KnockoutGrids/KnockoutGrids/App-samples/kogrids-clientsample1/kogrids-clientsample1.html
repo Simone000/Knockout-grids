@@ -42,6 +42,7 @@
                                     <th><a href="#" data-bind="click: function(){ changeSort('nome') }">Nome</a></th>
                                     <th><a href="#" data-bind="click: function(){ changeSort('reparto.nome') }">Reparto</a></th>
                                     <th><a href="#" data-bind="click: function(){ changeSort('reparto.azienda.nome') }">Azienda</a></th>
+                                    <th><a href="#" data-bind="click: function(){ changeSort('check1') }">check1</a></th>
                                     <th>
                                         <input type="checkbox" data-bind="checked: isAllSelected" />
                                     </th>
@@ -52,6 +53,9 @@
                                     <td data-bind="text: nome"></td>
                                     <td data-bind="text: reparto.nome"></td>
                                     <td data-bind="text: reparto.azienda.nome"></td>
+                                    <td>
+                                        <input type="checkbox" data-bind="checked: check1" disabled />
+                                    </td>
                                     <td>
                                         <input type="checkbox" data-bind="checked: isSelected" />
                                     </td>

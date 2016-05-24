@@ -17,6 +17,7 @@ function Dipendente(Dipendente) {
 
     self.id = Dipendente.ID;
     self.nome = Dipendente.Nome;
+    self.check1 = Dipendente.Check1;
 
     self.reparto = Dipendente.Reparto ? new Reparto(Dipendente.Reparto) : null;
 
@@ -42,9 +43,45 @@ function pageModel(params) {
 
     self.loadDipendenti = function () {
         var dipendenti_tmp = new Array();
-        dipendenti_tmp.push(new Dipendente({ ID: 1, Nome: "Dipendente 1", Reparto: { ID: 1, Nome: "Reparto 1", Azienda: { ID: 1, Nome: "Azienda 1" } } }));
-        dipendenti_tmp.push(new Dipendente({ ID: 2, Nome: "Dipendente 2", Reparto: { ID: 2, Nome: "Reparto 2", Azienda: { ID: 3, Nome: "Azienda 3" } } }));
-        dipendenti_tmp.push(new Dipendente({ ID: 3, Nome: "Dipendente 3", Reparto: { ID: 3, Nome: "Reparto 3", Azienda: { ID: 2, Nome: "Azienda 2" } } }));
+        dipendenti_tmp.push(new Dipendente({
+            ID: 1,
+            Nome: "Dipendente Nome Lungo",
+            Check1: false,
+            Reparto: {
+                ID: 1, Nome: "Reparto 1",
+                Azienda: { ID: 1, Nome: "Azienda 1" }
+            }
+        }));
+        dipendenti_tmp.push(new Dipendente({
+            ID: 2,
+            Nome: "Dipendente 2",
+            Check1: true,
+            Reparto: {
+                ID: 2,
+                Nome: "Reparto 2",
+                Azienda: { ID: 3, Nome: "Azienda 3" }
+            }
+        }));
+        dipendenti_tmp.push(new Dipendente({
+            ID: 3,
+            Nome: "Dipendente Nome Molto Lungo",
+            Check1: false,
+            Reparto: {
+                ID: 3,
+                Nome: "Reparto 3",
+                Azienda: { ID: 2, Nome: "Azienda 2" }
+            }
+        }));
+        dipendenti_tmp.push(new Dipendente({
+            ID: 3,
+            Nome: "Dipendente 4",
+            Check1: false,
+            Reparto: {
+                ID: 3,
+                Nome: "Reparto 3",
+                Azienda: { ID: 2, Nome: "Azienda 2" }
+            }
+        }));
 
         self.dipendenti(dipendenti_tmp);
     };
