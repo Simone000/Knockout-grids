@@ -38,11 +38,12 @@ function pageModel(params) {
     self.dipendenti = ko.observableArray();
 
     self.dipendentiPaged = ko.computed(function () {
-        return new knockoutgrids.ClientGrid(self.dipendenti(), 10, 'reparto.azienda.nome');
+        return new knockoutgrids.ClientGrid(self.dipendenti(), 5, 'reparto.azienda.nome');
     }, self);
 
     self.loadDipendenti = function () {
         var dipendenti_tmp = new Array();
+        
         dipendenti_tmp.push(new Dipendente({
             ID: 1,
             Nome: "Dipendente Nome Lungo",
@@ -73,7 +74,85 @@ function pageModel(params) {
             }
         }));
         dipendenti_tmp.push(new Dipendente({
-            ID: 3,
+            ID: 4,
+            Nome: "Dipendente 4",
+            Check1: false,
+            Reparto: {
+                ID: 3,
+                Nome: "Reparto 3",
+                Azienda: { ID: 2, Nome: "Azienda 2" }
+            }
+        }));
+        dipendenti_tmp.push(new Dipendente({
+            ID: 5,
+            Nome: "Dipendente Nome Lungo",
+            Check1: false,
+            Reparto: {
+                ID: 1, Nome: "Reparto 1",
+                Azienda: { ID: 1, Nome: "Azienda 1" }
+            }
+        }));
+        dipendenti_tmp.push(new Dipendente({
+            ID: 6,
+            Nome: "Dipendente 2",
+            Check1: true,
+            Reparto: {
+                ID: 2,
+                Nome: "Reparto 2",
+                Azienda: { ID: 3, Nome: "Azienda 3" }
+            }
+        }));
+        dipendenti_tmp.push(new Dipendente({
+            ID: 7,
+            Nome: "Dipendente Nome Molto Lungo",
+            Check1: false,
+            Reparto: {
+                ID: 3,
+                Nome: "Reparto 3",
+                Azienda: { ID: 2, Nome: "Azienda 2" }
+            }
+        }));
+        dipendenti_tmp.push(new Dipendente({
+            ID: 8,
+            Nome: "Dipendente 4",
+            Check1: false,
+            Reparto: {
+                ID: 3,
+                Nome: "Reparto 3",
+                Azienda: { ID: 2, Nome: "Azienda 2" }
+            }
+        }));
+        dipendenti_tmp.push(new Dipendente({
+            ID: 9,
+            Nome: "Dipendente Nome Lungo",
+            Check1: false,
+            Reparto: {
+                ID: 1, Nome: "Reparto 1",
+                Azienda: { ID: 1, Nome: "Azienda 1" }
+            }
+        }));
+        dipendenti_tmp.push(new Dipendente({
+            ID: 10,
+            Nome: "Dipendente 2",
+            Check1: true,
+            Reparto: {
+                ID: 2,
+                Nome: "Reparto 2",
+                Azienda: { ID: 3, Nome: "Azienda 3" }
+            }
+        }));
+        dipendenti_tmp.push(new Dipendente({
+            ID: 11,
+            Nome: "Dipendente Nome Molto Lungo",
+            Check1: false,
+            Reparto: {
+                ID: 3,
+                Nome: "Reparto 3",
+                Azienda: { ID: 2, Nome: "Azienda 2" }
+            }
+        }));
+        dipendenti_tmp.push(new Dipendente({
+            ID: 12,
             Nome: "Dipendente 4",
             Check1: false,
             Reparto: {

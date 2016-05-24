@@ -43,22 +43,24 @@
                             <tbody>
                                 <tr>
                                     <td style="width:166px;">
-                                        <table class="table table-striped table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th><a href="#" data-bind="click: function(){ changeSort('nome') }">Nome</a></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody data-bind="foreach: itemsInPageSorted()">
-                                                <tr>
-                                                    <td data-bind="text: nome"></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th><a href="#" data-bind="click: function(){ changeSort('nome') }">Nome</a></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody data-bind="foreach: itemsInPageSorted()">
+                                                    <tr>
+                                                        <td data-bind="text: nome"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </td>
                                     <td>
-                                        <div style="overflow:scroll;">
-                                            <table class="table table-striped table-hover" style="margin:0;">
+                                        <div style="overflow:auto;">
+                                            <table class="table table-striped">
                                                 <thead>
                                                     <tr>
                                                         <th><a href="#" data-bind="click: function(){ changeSort('reparto.nome') }">Reparto</a></th>

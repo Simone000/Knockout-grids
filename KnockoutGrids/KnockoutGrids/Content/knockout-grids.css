@@ -39,10 +39,17 @@
     }
 
         /* Fixed first column version */
-        .knockout-grids_t1 .panel-body .table-responsive .table_firstfixed{
+        .knockout-grids_t1 .panel-body .table-responsive .table_firstfixed {
             width:100%;
             table-layout:fixed;
         }
+            .knockout-grids_t1 .panel-body .table-responsive .table_firstfixed table thead tr {
+                height: 40px;
+            }
+
+            .knockout-grids_t1 .panel-body .table-responsive .table_firstfixed table tbody tr {
+                height: 60px;
+            }
 
 
         .knockout-grids_t1 .panel-body .table-responsive table {
