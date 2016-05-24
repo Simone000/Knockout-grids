@@ -6,12 +6,26 @@
     border: solid black 1px;
     padding: 20px;
 }
+    @media (max-width: 768px) {
+        .knockout-grids_t1 .panel-heading{
+            text-align:center;
+        }
+    }
+
     .knockout-grids_t1 .panel-heading .panel-title a {
         font-weight:bold;
     }
+
     .knockout-grids_t1 .panel-heading input{
         border-radius: 8px;
         padding-left: 4px;
+        float:right;
+    }
+
+    @media (max-width: 768px) {
+        .knockout-grids_t1 .panel-heading input{
+            float:none;
+        }
     }
 
 
@@ -19,6 +33,14 @@
     border: solid;
     border-top-style: none;
 }
+
+    .knockout-grids_t1 .panel-body .table-responsive {
+        border-radius:8px;
+    }
+
+        .knockout-grids_t1 .panel-body .table-responsive table {
+        }
+
     .knockout-grids_t1 .panel-body .pagination-menu {
         text-align:center;
         background-color: #BEBEBE;
@@ -28,4 +50,8 @@
 
         .knockout-grids_t1 .panel-body .pagination-menu label {
             text-decoration: underline;
+        }
+
+        .knockout-grids_t1 .panel-body .pagination-menu div {
+            display:inline-block;
         }

@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Knockout Grids</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knockout Grids</title>
 
     <link href="../../../Content/bootstrap.min.css" rel="stylesheet" />
     <link href="../../../Content/bootstrap-theme.min.css" rel="stylesheet" />
@@ -18,13 +19,16 @@
                     <a data-toggle="collapse" data-parent="#accordion" href="#reps">
                         <b>Dipendente</b>
                         <br class="visible-xs" />
-                        <span data-bind="text: '( ' + items().length + ' dipendenti)'"></span>
+                        <span class="span_countobs" data-bind="text: '( ' + items().length + ' dipendenti)'"></span>
                     </a>
 
-                    
-                    <input type="text" style="float:right;" data-bind="value: search, valueUpdate:'afterkeydown'"
+                    <br class="visible-xs" />
+
+                    <input type="text" data-bind="value: search, valueUpdate:'afterkeydown'"
                             placeholder="Nome Azienda" />                   <!--todo: change placeholder-->
                 </h3>
+
+                <div style="clear:both;"></div>
             </div>
 
             <div class="panel-collapse collapse in" id="reps">
@@ -55,17 +59,24 @@
                             </tbody>
                         </table>
 
-                        <div class="pagination-menu">
-                            <button data-bind="click: previous" class="btn"><i class="glyphicon glyphicon-step-backward"></i></button>
-                            <label data-bind="text: (parseInt(paginaAttuale()) + 1) + ' / ' + pagesNumber(), visible: isEditingPageIndex() == false, click: goToEditPageIndex" class="badge"></label>
-                            <input type="number" data-bind="value: paginaAttuale, visible: isEditingPageIndex() == true" />
-                            <button data-bind="click: next" class="btn"><i class="glyphicon glyphicon-step-forward"></i></button>
 
-                            <button data-bind="click: pageSizeMinus" class="btn"><i class="glyphicon glyphicon-minus"></i></button>
-                            <span>Page Size: </span>
-                            <label data-bind="text: pageSize(), visible: isEditingPageSize() == false, click: goToEditPageSize" class="badge"></label>
-                            <input type="number" data-bind="value: pageSize, visible: isEditingPageSize() == true" />
-                            <button data-bind="click: pageSizePlus" class="btn"><i class="glyphicon glyphicon-plus"></i></button>
+                        <div class="pagination-menu">
+                            <div class="div_menupaging">
+                                <button data-bind="click: previous" class="btn"><i class="glyphicon glyphicon-step-backward"></i></button>
+                                <label data-bind="text: (parseInt(paginaAttuale()) + 1) + ' / ' + pagesNumber(), visible: isEditingPageIndex() == false, click: goToEditPageIndex" class="badge"></label>
+                                <input type="number" data-bind="value: paginaAttuale, visible: isEditingPageIndex() == true" />
+                                <button data-bind="click: next" class="btn"><i class="glyphicon glyphicon-step-forward"></i></button>
+                            </div>
+
+                            <div class="div_menusizing">
+                                <button data-bind="click: pageSizeMinus" class="btn"><i class="glyphicon glyphicon-minus"></i></button>
+                                <span>Page Size: </span>
+                                <label data-bind="text: pageSize(), visible: isEditingPageSize() == false, click: goToEditPageSize" class="badge"></label>
+                                <input type="number" data-bind="value: pageSize, visible: isEditingPageSize() == true" />
+                                <button data-bind="click: pageSizePlus" class="btn"><i class="glyphicon glyphicon-plus"></i></button>
+                            </div>
+                            
+                            <div style="clear:both;"></div>
                         </div>
                     </div>
                 </div>
