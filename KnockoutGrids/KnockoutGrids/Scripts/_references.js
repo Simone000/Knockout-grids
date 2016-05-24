@@ -1,5 +1,6 @@
 ﻿/// <autosync enabled="true" />
 /// <reference path="../app-samples/kogrids-clientsample1/kogrids-clientsample1.js" />
+/// <reference path="../app-samples/kogrids-clientsample2/kogrids-clientsample2.js" />
 /// <reference path="../app-samples/kogrids-serversample1/kogrids-serversample1.js" />
 /// <reference path="../nugetoutput/content/app-samples/kogrids-clientsample1/kogrids-clientsample1.js" />
 /// <reference path="../nugetoutput/content/app-samples/kogrids-serversample1/kogrids-serversample1.js" />

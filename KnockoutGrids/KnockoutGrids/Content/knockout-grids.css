@@ -38,6 +38,13 @@
         border-radius:8px;
     }
 
+        /* Fixed first column version */
+        .knockout-grids_t1 .panel-body .table-responsive .table_firstfixed{
+            width:100%;
+            table-layout:fixed;
+        }
+
+
         .knockout-grids_t1 .panel-body .table-responsive table {
         }
 
@@ -55,3 +62,5 @@
         .knockout-grids_t1 .panel-body .pagination-menu div {
             display:inline-block;
         }
+
+
