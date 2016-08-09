@@ -124,8 +124,6 @@
   <ItemGroup>
     <Folder Include="App\" />
     <Folder Include="App_Data\" />
-    <Folder Include="NugetOutput\lib\" />
-    <Folder Include="NugetOutput\src\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -211,14 +209,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="NugetOutput\content\App-samples\kogrids-clientsample1\kogrids-clientsample1.html" />
-    <Content Include="NugetOutput\content\App-samples\kogrids-clientsample1\kogrids-clientsample1.js" />
-    <Content Include="NugetOutput\content\App-samples\kogrids-clientsample2\kogrids-clientsample2.html" />
-    <Content Include="NugetOutput\content\App-samples\kogrids-clientsample2\kogrids-clientsample2.js" />
-    <Content Include="NugetOutput\content\App-samples\kogrids-serversample1\kogrids-serversample1.html" />
-    <Content Include="NugetOutput\content\App-samples\kogrids-serversample1\kogrids-serversample1.js" />
-    <Content Include="NugetOutput\content\Content\knockout-grids.css" />
-    <Content Include="NugetOutput\content\Scripts\knockout-grids.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
