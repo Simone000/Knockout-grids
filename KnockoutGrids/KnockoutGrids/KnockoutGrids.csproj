@@ -167,6 +167,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App-samples\kogrids-client-filters\kogrids-client-filters.html" />
+    <Content Include="App-samples\kogrids-client-filters\kogrids-client-filters.js" />
     <Content Include="App-samples\kogrids-client\kogrids-client.html" />
     <Content Include="App-samples\kogrids-client\kogrids-client.js" />
     <Content Include="App-samples\kogrids-client-fixedcolumn\kogrids-client-fixedcolumn.html" />
