@@ -167,10 +167,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App-samples\kogrids-clientsample1\kogrids-clientsample1.html" />
-    <Content Include="App-samples\kogrids-clientsample1\kogrids-clientsample1.js" />
-    <Content Include="App-samples\kogrids-clientsample2\kogrids-clientsample2.html" />
-    <Content Include="App-samples\kogrids-clientsample2\kogrids-clientsample2.js" />
+    <Content Include="App-samples\kogrids-client\kogrids-client.html" />
+    <Content Include="App-samples\kogrids-client\kogrids-client.js" />
+    <Content Include="App-samples\kogrids-client-fixedcolumn\kogrids-client-fixedcolumn.html" />
+    <Content Include="App-samples\kogrids-client-fixedcolumn\kogrids-client-fixedcolumn.js" />
     <Content Include="App-samples\kogrids-serversample1\kogrids-serversample1.html" />
     <Content Include="App-samples\kogrids-serversample1\kogrids-serversample1.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
