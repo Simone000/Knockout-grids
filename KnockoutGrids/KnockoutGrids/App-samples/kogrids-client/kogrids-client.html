@@ -12,13 +12,17 @@
 </head>
 <body>
 
+    <!--todo: id div -->
     <div class="panel-group knockout-grids_t1" id="div_Dipendenti">
+        <!--todo: paged -->
         <div class="panel" data-bind="with: dipendentiPaged()">
             <div class="panel-heading">
                 <h3 class="panel-title">
+                    <!--todo: href -->
                     <a data-toggle="collapse" data-parent="#accordion" href="#reps">
-                        <b>Dipendente</b>
+                        <b>Dipendente</b> <!--todo: title -->
                         <br class="visible-xs" />
+                        <!--todo: text -->
                         <span class="span_countobs" data-bind="text: '( ' + items().length + ' dipendenti)'"></span>
                     </a>
 
@@ -33,6 +37,7 @@
 
             <div class="panel-collapse collapse in" id="reps">
                 <div class="panel-body">
+                    <!--todo: empty message -->
                     <span data-bind="visible: $data.length == 0"><b>Nessuna Dipendente presente</b></span>
 
                     <div class="table-responsive" data-bind="visible: items().length > 0">
