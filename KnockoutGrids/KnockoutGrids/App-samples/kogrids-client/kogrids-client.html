@@ -38,7 +38,7 @@
             <div class="panel-collapse collapse in" id="reps">
                 <div class="panel-body">
                     <!--todo: empty message -->
-                    <span data-bind="visible: $data.length == 0"><b>Empty</b></span>
+                    <span data-bind="visible: items().length == 0"><b>Empty</b></span>
 
                     <div class="table-responsive" data-bind="visible: items().length > 0">
                         <table class="table table-striped table-hover">
