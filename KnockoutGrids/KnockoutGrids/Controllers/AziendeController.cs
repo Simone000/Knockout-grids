@@ -175,26 +175,5 @@ namespace KnockoutGrids.Controllers
             return Ok(aziendeServizi);
         }
         */
-
-
-        public class AziendaModel
-        {
-            public int ID { get; set; }
-            public string Nome { get; set; }
-            public List<RepartoModel> Reparti { get; set; }
-        }
-
-        public class RepartoModel
-        {
-            public int ID { get; set; }
-            public string Nome { get; set; }
-            public List<DipendenteModel> Dipendenti { get; set; }
-        }
-
-        public class DipendenteModel
-        {
-            public int ID { get; set; }
-            public string Nome { get; set; }
-        }
     }
 }
