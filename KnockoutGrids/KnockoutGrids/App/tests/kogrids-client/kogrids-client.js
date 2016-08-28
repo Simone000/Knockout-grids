@@ -37,7 +37,7 @@ function pageModel(params) {
 
     self.dipendenti = ko.observableArray();
     
-    self.dipendentiPaged2 = new knockoutgrids.ClientGrid(self.dipendenti, 5, 'reparto.azienda.nome');
+    self.dipendentiPaged = new knockoutgrids.ClientGrid(self.dipendenti, 5, 'reparto.azienda.nome');
 
     //self.dipendentiPaged = ko.computed(function () {
     //    return new knockoutgrids.ClientGrid(self.dipendenti(), 5, 'reparto.azienda.nome');

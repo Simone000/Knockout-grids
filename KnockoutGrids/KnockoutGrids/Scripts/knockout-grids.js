@@ -1,4 +1,4 @@
-﻿//todo: cercare di togliere jQuery
+﻿//todo: cercare di togliere jQuery, usare ko.isObservable e ko.isComputed
 //todo: optimize https://www.airpair.com/knockout/posts/top-10-mistakes-knockoutjs
 ; (function (define) {
     define(['jquery', 'knockout'], function ($, ko) {
@@ -15,7 +15,6 @@
 
                 //unique id (for saving pagesize, etc..)
                 self.id = Math.floor(Math.random() * 100000, 1);
-                console.log(self.id);
 
                 self.items; //array di oggetti da paginare
 
@@ -237,7 +236,6 @@
 
                 //unique id (for saving pagesize, etc..)
                 self.id = Math.floor(Math.random() * 100000, 1);
-                console.log(self.id);
 
                 self.items; //array di oggetti da paginare
 
