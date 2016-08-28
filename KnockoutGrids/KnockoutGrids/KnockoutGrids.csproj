@@ -122,7 +122,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +172,8 @@
     <Content Include="App-samples\kogrids-client-fixedcolumn\kogrids-client-fixedcolumn.js" />
     <Content Include="App-samples\kogrids-server\kogrids-server.html" />
     <Content Include="App-samples\kogrids-server\kogrids-server.js" />
+    <Content Include="App\tests\kogrids-client\kogrids-client.html" />
+    <Content Include="App\tests\kogrids-client\kogrids-client.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />

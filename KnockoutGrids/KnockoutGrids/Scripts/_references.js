@@ -1,4 +1,5 @@
 ﻿/// <autosync enabled="true" />
+/// <reference path="../app/tests/kogrids-client/kogrids-client.js" />
 /// <reference path="../app-samples/kogrids-client/kogrids-client.js" />
 /// <reference path="../app-samples/kogrids-client-filters/kogrids-client-filters.js" />
 /// <reference path="../app-samples/kogrids-client-fixedcolumn/kogrids-client-fixedcolumn.js" />

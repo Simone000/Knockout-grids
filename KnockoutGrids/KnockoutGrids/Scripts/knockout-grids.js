@@ -1,4 +1,5 @@
-﻿//todo: cercare di togliere jQuery: https://www.airpair.com/knockout/posts/top-10-mistakes-knockoutjs
+﻿//todo: cercare di togliere jQuery
+//todo: optimize https://www.airpair.com/knockout/posts/top-10-mistakes-knockoutjs
 ; (function (define) {
     define(['jquery', 'knockout'], function ($, ko) {
         return (function () {
@@ -12,7 +13,19 @@
             function ClientGrid(Items, PageSize, SearchBy) {
                 var self = this;
 
-                self.items = ko.observableArray(Items); //array di oggetti da paginare
+                //unique id (for saving pagesize, etc..)
+                self.id = Math.floor(Math.random() * 100000, 1);
+                console.log(self.id);
+
+                self.items; //array di oggetti da paginare
+
+                //temp fix (I should only use self.items = Items)
+                if (ko.isObservable(Items)) {
+                    self.items = Items;
+                }
+                else {
+                    self.items = ko.observableArray(Items);
+                }
 
                 self.pageSize = ko.observable(PageSize ? PageSize : 10); //numero di elementi per pagina
                 self.paginaAttuale = ko.observable(0); //la pagina a cui mi trovo
