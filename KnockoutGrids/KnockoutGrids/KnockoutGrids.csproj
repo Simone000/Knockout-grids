@@ -166,6 +166,8 @@
     <Compile Include="ViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App-samples\kogrids-client-filters-ws\kogrids-client-filters-ws.html" />
+    <Content Include="App-samples\kogrids-client-filters-ws\kogrids-client-filters-ws.js" />
     <Content Include="App-samples\kogrids-client-filters\kogrids-client-filters.html" />
     <Content Include="App-samples\kogrids-client-filters\kogrids-client-filters.js" />
     <Content Include="App-samples\kogrids-client\kogrids-client.html" />
