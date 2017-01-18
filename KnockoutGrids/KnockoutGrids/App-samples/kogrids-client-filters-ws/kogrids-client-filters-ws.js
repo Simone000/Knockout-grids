@@ -20,9 +20,6 @@
         self.movimentisPaginate = new knockoutgrids.ClientGrid(self.movimentis_filtered, 10, 'causale');
 
 
-
-
-
         self.loadmovimentis = function () {
             function success(data) {
                 self.movimentis(ko.utils.arrayMap(data, function (item) {
